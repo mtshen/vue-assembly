@@ -1,0 +1,9 @@
+/build/
+/src/libs/
+/src/libs_sz/
+/config/
+/dist/
+/src/libs/
+/src/libs_sz/
+/*.js
+/src/assets/js/*.js

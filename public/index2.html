@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .CircularTurntableBox {
+      width: 600px;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="CircularTurntableBox"></div>
+</body>
+
+<script>
+
+  // 测试
+  const drawCircularTurntable = new DrawCircularTurntable(document.querySelector('.CircularTurntableBox'), {
+    contentList: [
+      { id: 1, title: '苹果', span: 2 },
+      { id: 2, title: '橘子', span: 3, color: '#665747' },
+      { id: 3, title: '谢谢参与', span: 4, color: '#66635c' },
+      { id: 4, title: '苹果2', span: 2 },
+      { id: 5, title: '橘子2', span: 3, color: '#665747' },
+      { id: 6, title: '谢谢参与', span: 4, color: '#66635c' },
+      { id: 7, title: '苹果2', span: 2 },
+      { id: 8, title: '橘子2', span: 3, color: '#665747' },
+      { id: 9, title: '谢谢参与', span: 4, color: '#66635c' },
+    ]
+  })
+
+  drawCircularTurntable.active(1)
+</script>
+</html>
